@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.effect.DropShadow?>
@@ -19,7 +20,7 @@
 
 <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" pannable="true" prefHeight="1284.0" prefWidth="1530.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
     <content>
-        <GridPane hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1747.0" prefWidth="1516.0" styleClass="main-container" vgap="20.0">
+        <GridPane hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1731.0" prefWidth="1516.0" styleClass="main-container" vgap="20.0">
             <columnConstraints>
                 <ColumnConstraints fillWidth="false" percentWidth="82.0" />
                 <ColumnConstraints fillWidth="false" percentWidth="17.0" />
@@ -85,10 +86,20 @@
                <Insets left="500.0" />
             </GridPane.margin></WebView>
             
-            <ImageView fitHeight="201.0" fitWidth="231.0" onMouseClicked="#nueva_ventana" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+            <ImageView accessibleRole="BUTTON" fitHeight="248.0" fitWidth="243.0" nodeOrientation="INHERIT" onMouseClicked="#nueva_ventana" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
                 <image>
                     <Image url="@TECHCOM.png" />
                 </image>
+            <effect>
+               <DropShadow>
+                  <color>
+                     <Color green="1.0" blue="0.011904762126505375" />
+                  </color>
+               </DropShadow>
+            </effect>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
             </ImageView>
          <ImageView fitHeight="48.0" fitWidth="231.0" layoutX="550.0" layoutY="260.0" GridPane.columnIndex="1" GridPane.halignment="CENTER">
             <image>
@@ -322,7 +333,7 @@
          </Hyperlink>
              <rowConstraints>
             <RowConstraints percentHeight="10.0" valignment="CENTER" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="254.13332519531247" minHeight="175.5999755859375" percentHeight="10.0" prefHeight="191.5999755859375" />
+            <RowConstraints maxHeight="254.13332519531247" minHeight="175.5999755859375" percentHeight="15.0" prefHeight="191.5999755859375" />
             <RowConstraints maxHeight="490.39998168945306" minHeight="381.79998779296875" percentHeight="25.0" prefHeight="391.4000244140625" />
             <RowConstraints maxHeight="89.06672363281245" minHeight="0.0" percentHeight="3.0" prefHeight="63.99990234374991" />
              <RowConstraints maxHeight="327.0" minHeight="67.99992675781243" percentHeight="15.0" prefHeight="327.0" />
